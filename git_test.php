@@ -53,4 +53,8 @@
 				}
 				
 			echo "<br />Connected Successfully";
+			
+			echo "I'm changing this folder";
+			
+			echo "This is an extra long line to test text wrapping........................................................................................................................................................................."
 		?>
