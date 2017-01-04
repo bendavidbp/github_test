@@ -6,24 +6,6 @@
 			On a fresh install in IIS you may first need to change the version of PHP to 5.X or 7.X (the x86 architecture version of 7.0 is necessary to handshake with the ECRS database) by going into >IIS Manager >PHP Manager and selecting "Change PHP Version".  After this it may be neccesary to create an ODBC DSN by running the ODBC Data-Sources 32-bit executable and creating a connection called "Catapult" (if the name is different the variable will need to be adjusted below).  This connection needs to be created with the SQL Anywhere 12 Driver, and you may need to install a trial version of SQL Anywhere 12 to gain access to that driver. The connection is created with a server name "catapult" and database name "catapult" with the credentials as listed in the Pricing Network Data file. 
 			
 			Next go to IIS Manager> Authentication.  Select "Anonymous Authentication", click "Edit" and make sure "Application Pool Identity" is checked.
-						//[BD]---Catch exceptions to the Try
-			catch(Exception $e)  {   
-				echo "Invalid Connection";
-				//Print Error Messages
-				die( print_r( $e->getMessage() ) );   
-			}  
-
-			//[BD]---SQL Statement(s)
-			$stmt = $conn->prepare("SELECT * FROM sysobjects WHERE type = 'U'");
-
-			//[BD]---Execute SQL Statement
-			$stmt->execute();
-				while ($row = $stmt->fetch()) {
-				  print_r($row);
-					echo "<br />";
-				}
-				
-			echo "<br />Connected Successfully";
 			
 			After this you will need to configure PHP to use the DSN by installing and initiating the odbc_pdo driver/extension.  First make sure the php_pdo_odbc.dll file is in your /ext directory off of the main PHP directory of the version you are using (make sure you are making these adjustements in the "Program Files (X86)" folder, or else you are adjusting the now inactive x64 PHP version) - or if it is not there download it.  Once the file is in the directory edit the php.ini file in the main PHP directory to include the following extension line in the extension block at the end of the file: extension=php_pdo_odbc.dll.  Restart the computer and the odbc_pdo driver should now be enabled.  The below connection script should now work.
 			
@@ -53,6 +35,23 @@
 				$conn->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION ); 	
 			}
 			
-		echo "Let's change thins now"
+			//[BD]---Catch exceptions to the Try
+			catch(Exception $e)  {   
+				echo "Invalid Connection";
+				//Print Error Messages
+				die( print_r( $e->getMessage() ) );   
+			}  
+
+			//[BD]---SQL Statement(s)
+			$stmt = $conn->prepare("SELECT * FROM sysobjects WHERE type = 'U'");
+
+			//[BD]---Execute SQL Statement
+			$stmt->execute();
+				while ($row = $stmt->fetch()) {
+				  print_r($row);
+					echo "<br />";
+				}
+				
+			echo "<br />Connected Successfully";
 			
 		?>
