@@ -1,0 +1,5 @@
+	$server = "11.123.123.123";
+    $database = 'myDatabase';
+    $port = 1234;
+    $username = "myUsername";
+    $password = "myPassword";

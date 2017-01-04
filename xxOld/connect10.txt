@@ -1,0 +1,13 @@
+<?php
+
+    //$hostname = "10.215.76.250";
+    //$dbname = 'catapult';
+    //$port = 2638;
+    //$username = "ecrs";
+    //$pw = "catapult";
+	
+	$db = new PDO("sqlsrv:Server=10.215.76.250:2638;Database=catapult", "ecrs", "catapult");
+	
+	
+	
+?>
