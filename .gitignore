@@ -1,0 +1,12 @@
+# I'm commenting on how this is a comment
+# This file accepts very basic regular expressions
+# Negate expressions with !
+# Ignore directories with directory/subdirectory/
+
+ignore_this_file.php
+*.msg
+*.zip
+*.gz
+log/*.log
+
+

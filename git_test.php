@@ -52,7 +52,7 @@
 					echo "<br />";
 				}
 				
-			echo "<br />Connected Successfully";
+			echo "<br />Connected Successfully!";
 <<<<<<< HEAD
 			
 =======
