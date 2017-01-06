@@ -57,5 +57,5 @@
 			
 =======
 >>>>>>> parent of a7035d0... Committing changes
-echo "LET'S BRANCH THIS LALALALALALALA";
+echo "LET'S BRANCH THIS LALA";
 		?>
