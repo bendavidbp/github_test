@@ -8,5 +8,5 @@ ignore_this_file.php
 *.zip
 *.gz
 # log/*.log added to .gitconfig_global in the wwwroot directory
-
+tempfile2.txt
 
