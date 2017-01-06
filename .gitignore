@@ -7,6 +7,6 @@ ignore_this_file.php
 *.msg
 *.zip
 *.gz
-log/*.log
+# log/*.log added to .gitconfig_global in the wwwroot directory
 
 
