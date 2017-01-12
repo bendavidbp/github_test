@@ -53,7 +53,11 @@
 				}
 				
 			echo "<br />Connected Successfully!";
+<<<<<<< Updated upstream
 
 			echo "This is my mission: ";
 
+=======
+			echo "This is my mission: ";
+>>>>>>> Stashed changes
 		?>
