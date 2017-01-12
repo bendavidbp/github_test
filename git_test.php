@@ -53,7 +53,7 @@
 				}
 				
 			echo "<br />Connected Successfully!";
-<<<<<<< HEAD
+<<<<<<: HEAD
 			
 =======
 >>>>>>> parent of a7035d0... Committing changes
