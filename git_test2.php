@@ -1,6 +1,6 @@
 		<?php
 			/* 
-			
+			MISSION AT THE TOP
 			[BD]---This Connection works on Windows Server 2012 R2 in PHP 5.X-7.X (The PHP version running in x86 architecture mode).  
 			
 			On a fresh install in IIS you may first need to change the version of PHP to 5.X or 7.X (the x86 architecture version of 7.0 is necessary to handshake with the ECRS database) by going into >IIS Manager >PHP Manager and selecting "Change PHP Version".  After this it may be neccesary to create an ODBC DSN by running the ODBC Data-Sources 32-bit executable and creating a connection called "Catapult" (if the name is different the variable will need to be adjusted below).  This connection needs to be created with the SQL Anywhere 12 Driver, and you may need to install a trial version of SQL Anywhere 12 to gain access to that driver. The connection is created with a server name "catapult" and database name "catapult" with the credentials as listed in the Pricing Network Data file. 
