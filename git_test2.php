@@ -55,5 +55,7 @@
 			echo "<br />Connected Successfully!";
 
 			echo "This is my mission: ";
+			
+			echo "This is my mission: ";
 
 		?>
