@@ -53,13 +53,7 @@
 				}
 				
 			echo "<br />Connected Successfully!";
-<<<<<<< Updated upstream
 
-echo "LET'S BRANCH THIS LALALALALALALA";
-AND THEN TRULY MERGE!
-OR NOT?????
-
-=======
 			echo "This is my mission: ";
->>>>>>> Stashed changes
+
 		?>
