@@ -53,11 +53,9 @@
 				}
 				
 			echo "<br />Connected Successfully!";
-<<<<<<< HEAD
-			
-=======
->>>>>>> parent of a7035d0... Committing changes
+
 echo "LET'S BRANCH THIS LALALALALALALA";
 AND THEN TRULY MERGE!
 OR NOT?????
+
 		?>
