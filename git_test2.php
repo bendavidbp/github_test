@@ -1,7 +1,11 @@
 		<?php
 			/* 
 			MISSION AT THE TOP
-			[BD]---This Connection works on Windows Server 2012 R2 in PHP 5.X-7.X (The PHP version running in x86 architecture mode).  
+			[BD]---This Connection works on Windows Server 2012 R2 in PHP 5.X-7.X (The PHP version running in x86 architecture mode).
+
+*/
+			echo "Here I shall make a change!";
+/*			
 			
 			On a fresh install in IIS you may first need to change the version of PHP to 5.X or 7.X (the x86 architecture version of 7.0 is necessary to handshake with the ECRS database) by going into >IIS Manager >PHP Manager and selecting "Change PHP Version".  After this it may be neccesary to create an ODBC DSN by running the ODBC Data-Sources 32-bit executable and creating a connection called "Catapult" (if the name is different the variable will need to be adjusted below).  This connection needs to be created with the SQL Anywhere 12 Driver, and you may need to install a trial version of SQL Anywhere 12 to gain access to that driver.  The isntall file is in the server configuration folder and when prompted to give a license keep hitting continue and you will be prompted to agree to a trial.  All that is needed is the driver so using the trial works fine.
 			
