@@ -15,6 +15,8 @@
 				
 			*/
 			
+			echo "I'm changing this for some reasons";
+			
 			//[BD]---Display All Errors
 			ini_set('display_errors', 1);
 			ini_set('display_startup_errors', 1);
